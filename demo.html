@@ -21,18 +21,26 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script type="text/javascript">
+  // Performs animation of entire tree
   function animateTree(startLevel, endLevel){
-    console.log("Current Level: ", startLevel);
+    // Seems like a good amount of time to wait.
+    // There has to be some way to calculate this based on animation-duration.
+    // I couldn't figure out what animation-duration was really, so came across
+    // this number by trail and error.
+    var millisecondsToWait = 1000;
 
     if (endLevel > startLevel) {
+      // Perform animation for current level
       animateLevel(startLevel);
 
-      animateTree(startLevel + 1, endLevel);
-    } else {
-      console.log("Finished: ", startLevel, endLevel);
+      // Wait to perform next level of animation until current level animation is done.
+      setTimeout(function() {
+        animateTree(startLevel + 1, endLevel);
+      }, millisecondsToWait);
     }
   }
 
+  // Perform animation of a single level
   function animateLevel(currentLevel) {
     var nextLevel = currentLevel + 1;
 
