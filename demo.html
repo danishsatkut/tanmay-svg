@@ -1,0 +1,188 @@
+<style type="text/css">
+  path {
+    fill-opacity: 0;
+    stroke: #000;
+    stroke-width: 1;
+    stroke-dasharray: 870;
+    stroke-dashoffset: 870;
+    animation: draw 10s infinite linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  function animate_tree(old_level, new_level){
+  var current_level = old_level;
+  do {
+    var class_to_be_hidden = 'level' + current_level + '_removable';
+    current_level += 1;
+    var non_removable_class_to_show = 'level' + current_level + '_non_removable';
+    var removable_class_to_show = 'level' + current_level + '_removable'
+    $('.' + class_to_be_hidden).css('display', 'none');
+    $('.' + non_removable_class_to_show).css('display', 'inline');
+    $('.' + removable_class_to_show).css('display', 'inline');
+  } while (new_level > current_level)
+}
+
+</script>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="300"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="danish_demo.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="89.563698"
+     inkscape:cy="889.35297"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1309"
+     inkscape:window-height="200"
+     inkscape:window-x="57"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 36.785714,26.647895 0,56.785715"
+       id="path2985"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 36.785714,94.862181 c 0,9.642859 0,49.999999 0,49.999999"
+       id="path2987"
+       class="level0_removable"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:none;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 74.285714,27.719324 0,49.285714"
+       id="path2989"
+       class="level1_non_removable"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:none;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 75,95.576467 0,47.500003"
+       id="path2991"
+       class="level1_removable"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:none;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 109.28571,28.076467 107.5,75.219324"
+       id="path2993"
+       class="level2_non_removable"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:none;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 111.07143,96.290753 0,46.785717"
+       id="path2995"
+       class="level2_removable"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="39.285713"
+       y="222.36218"
+       id="text2988"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2990"
+         x="39.285713"
+         y="222.36218">0   1   2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="370"
+       y="69.505043"
+       id="text2992"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2994"
+         x="370"
+         y="69.505043">NR</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="382.14285"
+       y="133.07648"
+       id="text2996"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2998"
+         x="382.14285"
+         y="133.07648">R</tspan></text>
+  </g>
+</svg>
+
+
+<p>
+  NR - Non removable</br>
+  R - Removable</br>
+
+  Open the console and call animate_tree(0,1). You will see level 0 removable line vanishing and level
+  1 removable as well as non_removable line appearing </br>
+
+  Now call animate_tree(1,2). You will see level 1 removable line vanishing and level
+  2 removable as well as non_removable line appearing </br>
+</br></br>
+  Problem</br>
+  Reload the page
+  call animate_tree(0,2)</br>
+  Desirable : level 0 removable vanishes, then level 1 removable and non_removable appear, then level 1 removable vanishes and level 2 removable and non_removable appear </br>
+  What happens: level 0 removable vanishes, then level 1,2  non_removable and level 2 removable appears. level 1 non removable does not appear only (it should appear and then vanish as per animation)</br>
+
+  Unverified cause as per me: before level 1 appearance and vanishing happens, js has already given command to hide it since appearance and vanishing happens on another thread, that thread is animating a hidden element.
+</p>
+
+
+<h3>code description</h3>
+<p>
+  google jquery is included.</br>
+  There is a simple keyframe based animation on svg path element</br>
+  A js with animate_tree function which takes current_level and final_level. It simply level by level hides all elements with class 'level_#{level}_removable' and unhides level + 1 elements until final level is reached.
+</p>
