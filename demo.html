@@ -21,18 +21,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script type="text/javascript">
-  function animate_tree(old_level, new_level){
-  var current_level = old_level;
-  do {
-    var class_to_be_hidden = 'level' + current_level + '_removable';
-    current_level += 1;
-    var non_removable_class_to_show = 'level' + current_level + '_non_removable';
-    var removable_class_to_show = 'level' + current_level + '_removable'
-    $('.' + class_to_be_hidden).css('display', 'none');
-    $('.' + non_removable_class_to_show).css('display', 'inline');
-    $('.' + removable_class_to_show).css('display', 'inline');
-  } while (new_level > current_level)
-}
+  function animateTree(startLevel, endLevel){
+    console.log("Current Level: ", startLevel);
+
+    if (endLevel > startLevel) {
+      animateLevel(startLevel);
+
+      animateTree(startLevel + 1, endLevel);
+    } else {
+      console.log("Finished: ", startLevel, endLevel);
+    }
+  }
+
+  function animateLevel(currentLevel) {
+    var nextLevel = currentLevel + 1;
+
+    var currentRemovableElement = '.level' + currentLevel + '_removable',
+        nextNonRemovableElement = '.level' + nextLevel + '_non_removable',
+        nextRemovableElement = '.level' + nextLevel + '_removable';
+
+    // Perform animations
+    $(currentRemovableElement).css('display', 'none');
+    $(nextRemovableElement).css('display', 'inline');
+    $(nextNonRemovableElement).css('display', 'inline');
+  }
 
 </script>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
